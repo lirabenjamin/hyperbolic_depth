@@ -49,6 +49,11 @@ I believe the delay discounting literature has underweighted the importance of l
 In artificial intelligence, these processes relate to the two components of reinforcement learning algorithms in computers: value learning and policy learning. Successful RL systems require both a mechanism to learn the value of states (how much discounted future reward can I expect to receive given that I am in state X), and a policy (what actions should I take when I am in this state). In a sense, we humans also need both components: a valuation process to map external to subjective value, and a policy process to learn what behavior in what situations should be preferred when trying to maximize reward.
 
 I hope to write a perspective style paper to make these three points. I would hope that this would contribute to our multidisciplinary understanding of these processes, which could hopefully lead to new methods and insights on the different fields. From a practical perspective, I hope that incorporating the learning component of real-world policy relevant instances of self-control might lead to strategies to bridge this gap, and hopefully result in positive interventions or messaging.
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{fig.pdf}
+\caption{Learning and valuation are related processes inherent in both reinforcement learning and delay discounting. Learning refers to associating a behavior with a contingent reward. Valuation refers to the process of mapping the value of a reward from subjective to objective. Both processes are affected by delays.}
+\end{figure}
 
 @ainslie1974 @buehner2003 @farmer2009 @fedus2019 @green1996 @greville2010 @greville2012 @laibson1997 @mcnamara1980 @sozou1998 @ali2023 @rachlin1972 @rachlin1991 @rachlin2004science @dasgupta2005 @sargisson2020 @schultheis @nafi @ostaszewski1996 @ostaszewski2013 @rachlin2008 @story2014
 
