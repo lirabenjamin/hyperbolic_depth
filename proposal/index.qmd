@@ -33,7 +33,7 @@ header-includes: |
   \titlespacing*{\section}{0pt}{0pt}{10pt}
   \titlespacing*{\subsection}{0pt}{0pt}{5pt}
   \titlespacing*{\subsubsection}{0pt}{0pt}{2pt}
-bibliography: ../refs/hyperbolic.bib
+bibliography: ../hyperbolic.bib
 csl: ../apa-numeric-superscript.csl
 ---
 
@@ -50,7 +50,7 @@ In artificial intelligence, these processes relate to the two components of rein
 
 I hope to write a perspective style paper to make these three points. I would hope that this would contribute to our multidisciplinary understanding of these processes, which could hopefully lead to new methods and insights on the different fields. From a practical perspective, I hope that incorporating the learning component of real-world policy relevant instances of self-control might lead to strategies to bridge this gap, and hopefully result in positive interventions or messaging.
 
-@ainslie1974 @buehner2003 @farmer2009 @fedus2019 @green1996 @greville2010 @greville2012 @laibson1997 @mcnamara1980 @sozou1998 
+@ainslie1974 @buehner2003 @farmer2009 @fedus2019 @green1996 @greville2010 @greville2012 @laibson1997 @mcnamara1980 @sozou1998 @ali2023 @rachlin1972 @rachlin1991 @rachlin2004science @dasgupta2005 @sargisson2020 @schultheis @nafi @ostaszewski1996 @ostaszewski2013 @rachlin2008 @story2014
 
 
 # Related Readings
