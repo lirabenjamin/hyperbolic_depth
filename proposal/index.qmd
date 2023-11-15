@@ -1,0 +1,57 @@
+---
+title: "Delay Discounting and Reinforcement Learning"
+subtitle: "Third year paper proposal"
+author: "Benjamin Lira"
+css: custom.css
+# format: html
+format: 
+  pdf:
+    documentclass: article
+    classoption: onecolumn
+    fontfamily: times
+fig-cap-location: top
+table-cap-location: bottom
+editor: visual
+self-contained: true
+fontsize: 12pt
+# linestretch: 1.6
+link-citations: true
+keep-tex: false
+geometry: margin=1in
+header-includes: |
+  \usepackage{sectsty}
+  \usepackage{helvet}
+  \usepackage{xcolor}
+  \setlength{\parindent}{1em}
+  \setlength{\parskip}{1em}
+  \definecolor{darkblue}{RGB}{0,0,139}
+  \usepackage{titlesec}
+  \allsectionsfont{\sffamily\color{darkblue}}
+  \usepackage{etoolbox}
+  \usepackage{setspace}
+  \patchcmd{\maketitle}{\begingroup}{\begingroup\sffamily\bfseries\color{darkblue}}{}{}
+  \titlespacing*{\section}{0pt}{0pt}{10pt}
+  \titlespacing*{\subsection}{0pt}{0pt}{5pt}
+  \titlespacing*{\subsubsection}{0pt}{0pt}{2pt}
+bibliography: ../refs/hyperbolic.bib
+csl: ../apa-numeric-superscript.csl
+---
+
+How does hyperbolic discounting relate to reinforcement learning (in particular with delayed rewards)? There is a steep reduction in the value of a reward the further it is in the future. The shape of this discounting has been characterized as hyperbolic. Similarly, there is a steep decline in learning (e.g., lever pressing rate) when a delay is introduced between behavior and reward. Are these two processes the same?
+
+I argue that both reinforcement learning and hyperbolic discounting arise from the same processing of uncertainty inherent in time lags. In the case of delay discounting, there is a lag between decision time and reward claiming time. Hyperbolic discounting arises from the uncertainty of whether or not I will be able to receive the reward (i.e., there is a hazard rate that controls how likely it is that something happens so that I cannot cash the 100 USD?). Sozou@sozou1998 argues that hyperbolic decay arises from integrating over an exponential prior on the hazard rate, given that it is uncertain (the particular shape of the prior is less important, and similar curves will be produced with other priors).
+
+In the case of reinforcement learning, there is a lag between behavior and the reward that needs to be associated with that behavior. Reinforcement delays make learning difficult because there is uncertainty about which of the actions that occurred prior to the reward caused the reward to come about (i.e., the credit assignment problem in AI reinforcement learning). When trying to associate a behavior to a delayed reward, the larger the amount of time between action and reward, the greater the number of potential actions (causes) that might have caused the reward. In much the same way, there is also likely to be uncertainty about the rate with which these extra causes enter per unit time.
+
+I believe the delay discounting literature has underweighted the importance of learning, while the learning literature has underweighted the importance of valuation. Traditional intertemporal choice tasks (e.g., would you take 120 dollars in a month, or 100 dollars today) tend to ignore the learning component. In the real world, when I choose to remain on the couch rather than exercising, not only do I have a valuation problem (I discount the future benefits); I also have a learning problem (I have difficulty learning to associate the activity of exercising to whatever positive delayed consequences it brings me). Conversely, in the reinforcement learning case, not only is behavior muted due to difficulties learning from delayed rewards (i.e., associating the behavior with its consequence), but the value of the future reward is lower.
+
+
+In artificial intelligence, these processes relate to the two components of reinforcement learning algorithms in computers: value learning and policy learning. Successful RL systems require both a mechanism to learn the value of states (how much discounted future reward can I expect to receive given that I am in state X), and a policy (what actions should I take when I am in this state). In a sense, we humans also need both components: a valuation process to map external to subjective value, and a policy process to learn what behavior in what situations should be preferred when trying to maximize reward.
+
+I hope to write a perspective style paper to make these three points. I would hope that this would contribute to our multidisciplinary understanding of these processes, which could hopefully lead to new methods and insights on the different fields. From a practical perspective, I hope that incorporating the learning component of real-world policy relevant instances of self-control might lead to strategies to bridge this gap, and hopefully result in positive interventions or messaging.
+
+@ainslie1974 @buehner2003 @farmer2009 @fedus2019 @green1996 @greville2010 @greville2012 @laibson1997 @mcnamara1980 @sozou1998 
+
+
+# Related Readings
+
